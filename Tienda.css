@@ -1,0 +1,392 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #495996 ;
+}
+
+header{
+    width: 100%;
+    margin:0;
+}
+
+@font-face {
+  font-family: Titulos;
+  src: url(Fuentes/Shotgun.ttf);
+}
+
+@font-face {
+  font-family: FuenteFontFace2;
+  src: url(Fuentes/Organic\ Relief.ttf);
+}
+
+
+body {
+    margin:0;
+    width: 100%;
+    height: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-family: 'Koulen', cursive;
+    font-size: 20px;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.PagAct {
+    background-color: #8491f5;
+}
+
+
+
+h1 {
+    padding-left: 40%;
+    padding-top: 20%;
+}
+
+section#barra {
+    z-index: 999;
+    width: 100%;
+    height: 48px;
+    position: relative;
+    overflow: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#top {
+    width: 100%;
+    height: 25%;
+    background-color: #495996 ;
+}
+
+
+#titulo {
+    text-align: center;
+    color: #ffffff;
+    line-height: 180px;
+    -webkit-text-stroke: .5px rgb(0, 0, 0);
+    font-size: 60px;
+    
+    font-family: FuenteFontFace2;
+}
+
+#comida {
+    width: 100%;
+    height: 90%;
+    background-color: #ffffff;
+   
+}
+
+
+
+#ofertas {
+  width: 100%;
+  height: 10%;
+  background-color: #ffffff;
+}
+#ofertastxt {
+  text-align: center;
+  font-size: 50px;
+  font-family: Titulos;
+  line-height: 120px;
+}
+
+
+
+
+
+
+/*                      Carrusel                        */
+
+
+
+.slides {
+    padding: 0;
+    width: 1000px; height: 600px;
+    display: block; margin: auto;
+    position: relative;
+    top: 10px;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 1000px; height: 600px;
+    display: block; position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 10%;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #fff;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 550px;
+    font-family: "varela round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119 );
+}
+
+.slide:hover + .nav label { opacity: 0.5;}
+
+.nav label:hover { opacity: 1; }
+
+
+.nav .next { right: 0;}
+
+input:checked + .slide-container .slide {
+    opacity: 1;
+
+    transform: scale(1);
+    
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+ input#img-2:checked ~ .nav-dots label#img-dot-2,
+ input#img-3:checked ~ .nav-dots label#img-dot-3,
+ input#img-4:checked ~ .nav-dots label#img-dot-4,
+ input#img-5:checked ~ .nav-dots label#img-dot-5,
+ input#img-6:checked ~ .nav-dots label#img-dot-6, {
+     background: rgba(0, 0, 0, 0.8);
+ }
+
+
+
+
+
+
+
+
+
+
+/*                      Carrusel                        */
+
+
+
+
+
+
+
+
+
+/*                     Galeria De Imagenes                        */
+
+
+#Ropa {
+    width: 100%;
+    height: auto%;
+    background-color:  #ffffff;
+
+    padding: 20px;
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    background: #f2f2f2;
+}
+
+img {
+    width: 100%; 
+    height: auto;
+  }
+  h2 {
+    margin-bottom: .5em;
+    text-align: center;
+    font-size: 50px;
+    font-family: Titulos;
+    
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));;
+    grid-gap: 1em;
+  }
+  
+  
+  /* hover styles */
+  .location-listing {
+    position: relative;
+  }
+  
+  .location-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+  
+  .location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: #51257763 ;
+    color: rgb(0, 0, 0);
+    
+    /* position the text in t’ middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .location-listing:hover .location-title {
+    opacity: 1;
+  }
+  
+  .location-listing:hover .location-image img {
+    filter: blur(2px);
+  }
+  
+  
+  /* for touch screen devices */
+  @media (hover: none) { 
+    .location-title {
+      opacity: 1;
+    }
+    .location-image img {
+      filter: blur(2px);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*     Footer       */
+
+
+
+footer {
+  width: 100%;
+  height: 100px;                                                            /*tamaño y color de fondo el footer*/
+  background-color: #1b2542  ;
+  
+  font-family: 'Koulen', cursive;          /* texto del footer*/
+  font-size: 20px;
+  color: #d1d5f7;
+  text-align: center;
+  line-height: 100px;
+}
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="Donar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    /* Google font 1*/
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+    font-family: 'Koulen', cursive;
+    
+    /* Google font 2*/
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+
+    font-family: 'Teko', sans-serif;
+
+
+    /* Google font 3*/
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">  
+
+    font-family: 'Righteous', cursive;
+
+
+</head>
+
+<header>
+  
+
+</header>
+
+
+<body>
+    <section id="barra">
+        <ul>
+            <li class="PagAct"><a href="Donar.html">Donar</a> </li> 
+            <li><a href="Donadores.php">Donadores</a> </li> 
+            <li><a href="index.html">Inicio</a></li> 
+            <li><a href="Tienda.html">Tienda</a></li> 
+            <li><a href="Nosotros.html">Nosotros</a></li> 
+         
+            <li><a href="Contacto.html">Contacto</a></li> 
+            
+        </ul>
+    </section>
+      
+    
+
+<div id="centrado">
+   
+    <section id="Formulario">
+        <h2>DONACIONES</h2>
+
+
+
+            <form class="Donaciones" action="guardar.php" method="POST" id="contact_form" runat="server" enctype="multipart/form-data">
+
+
+
+                <label for="Nombre">Nombre:</label><br>
+                <input type="text" id="Nombre" name="Nombre" maxlength="30"required ><br><br>
+
+
+                <label for="Correo">Correo Electronico:</label><br>
+                <input type="text" id="Calle" name="Correo" maxlength="60"required ><br><br>
+
+                <label for="Telefono">Telefono:</label><br>
+                <input type="text" id="Cel" name="Telefono" maxlength="60"required ><br><br>
+
+
+                <h4>Monto A Donar:</h4>
+                <select name="Monto"><br>
+                <option value="">------</option>
+                <option value="20$">20$</option>
+                <option value="50$">50$</option>
+                <option value="100$">100$</option>
+                <option value="150$">150$</option>
+                <option value="200$">200$</option>
+                <option value="250$">250$</option>
+                <option value="500$">500$</option>
+                <option value="1000$">1000$</option>
+                <option value="2500$">2500$</option>
+                <option value="5000$">5000$</option>
+                </select><br><br>
+
+
+                <h4>Metodo De Pago:</h4>
+                <div><input type="radio" name="Pago" value="Credito" /><label>Tarjeta De Credito</label></div>
+                <div><input type="radio" name="Pago" value="Debito" /><label>Tarjeta De Debito</label></div>
+                <div><input type="radio" name="Pago" value="Paypal" /><label>PayPal</label></div><br><br>
+
+
+
+                <button class="sumbit" type="sumbit">Donar<3 </button>
+            </form>
+   
+    </section>
+</div>
+
+<div id="centrado">
+    <section id="Donaciontxt">
+       <div id="holatxt">Todas las donaciones realizadas son 100% en beneficio de refugios para animales sin hogar.</div>
+    </section>
+</div>
+  
+
+    
+    <script src="js/rellax.min.js">         </script>
+    <script src="js/index.js">         </script>
+
+
+    <footer>
+        Terminos y Condiciones  -  Politica y Privacidad  -   2022
+</footer>
+    
+</body>
+
+
+
+</html>

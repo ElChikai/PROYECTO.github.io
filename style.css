@@ -1,0 +1,314 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(165, 165, 221);
+}
+
+header{
+    width: 100%;
+    margin:0;
+}
+
+@font-face {
+    font-family: Titulos;
+    src: url(Fuentes/Shotgun.ttf);
+  }
+
+  @font-face {
+    font-family: FuenteFontFace2;
+    src: url(Fuentes/Organic\ Relief.ttf);
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-family: 'Koulen', cursive;
+    font-size: 20px;
+}
+
+
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.PagAct {
+    background-color: #8491f5 ;
+}
+
+section#barra {
+    z-index: 999;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    overflow: visible;
+}
+
+
+body {
+    margin:0;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: rgb(253,253,253);
+    text-shadow: 2px 2px rgb(0,0,0);
+    font-size: 1.2em;
+}
+
+
+
+section#slider {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+div.image-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+   
+}
+
+#imagenF {
+    opacity: 80%;
+}
+
+
+
+h1#slider-text {
+    font-family: FuenteFontFace2;
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -0%);
+    font-size: 4em;
+    background: linear-gradient(3deg, rgb(0, 0, 0) 40%, rgb(123, 61, 238) 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+div#content-images-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+div.text-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+}
+
+
+
+
+
+
+
+section#content {
+    width: 100%;
+    height: 60%;
+    background-color: #f0f0f0;
+    
+}
+
+
+#aside {
+    
+    height: 100%; width: 700px;
+    /*background-color: rgb(196, 57, 57); */
+    background-image: url(./IMG/Perro\ y\ gato.jpg);
+    background-size: cover;
+    margin: 2em; padding: 0.5em;
+    border-radius: 1em;
+    float: left;
+   
+}
+
+#Texto {
+    color: #ffffff;
+    height: 20%; width: 700px;
+    background-color: #8491f5 ;
+    margin: 0.5em; margin-top: 15%; padding: 0.5em;                                             
+    border-radius: 1em;
+    float: right;
+  
+}
+
+#aside2 {
+    
+    height: 90%; width: 700px;
+    /*background-color: rgb(196, 57, 57); */
+    background-image: url(./IMG/GATITO.jpg);
+    background-size: cover;
+    
+    margin: 2em; padding: 0.5em;
+    border-radius: 1em;
+    float: right;
+   
+}
+
+#Texto2 {
+    color: #d1d5f7;
+    height: 20%; width: 700px;
+    background-color: #495996 ;
+    margin: 0.5em; margin-top: 10%; padding: 0.5em;                                             
+    border-radius: 1em;
+    float: left;
+   
+}
+
+article.Fuente {
+    font-size: 35px;
+    font-family: 'Teko', sans-serif;                       /* fuente y tamaño de letra del aside*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#car {
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0;
+  }
+  
+  .carrusel2 {
+    text-align: center;
+    color: rgb(152, 143, 143);
+    width: 100%; height: 100%;
+    margin: auto;
+    overflow: hidden;
+    
+  }
+  
+  #dezlizador {
+    width: 1920px;
+    height: 256px;
+    background-image: url(./IMG/Large.png);
+    background-size: ;
+    margin: 0;
+  
+    animation: slider 60s infinite linear ;
+  
+  
+    
+  }
+  
+  @keyframes slider {
+    to{ background-position: 2816px;}
+  }
+  
+  
+  h1 {
+    text-align: center;
+    line-height: 250px;
+  
+  }
+  
+
+
+
+
+
+
+
+
+/*       footer               */
+
+footer {
+    width: 100%;
+    height: 100px;                                                            /*tamaño y color de fondo el footer*/
+    background-color: #1b2542  ;
+    
+    font-family: 'Koulen', cursive;          /* texto del footer*/
+    font-size: 20px;
+    color: #d1d5f7;
+    text-align: center;
+    line-height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  Paleta de colores
+#140f07    color 5
+#1b2542    color 4
+#495996    color 3
+#8491f5    color 2
+#d1d5f7    color 1
+*/
